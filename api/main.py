@@ -7,6 +7,9 @@ import pickle
 import os
 import pandas as pd
 
+import os
+PORT = int(os.environ.get("PORT", 10000))
+
 load_dotenv()
 
 app = FastAPI(title="Financial Churn Prediction API")
