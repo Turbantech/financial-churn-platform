@@ -4,7 +4,6 @@ An end to end machine learning platform that predicts which bank customers are l
 
 ## Live Demo
 - Dashboard: https://your-vercel-url.vercel.app
-- API Docs: https://financial-churn-platform.onrender.com/docs
 
 ## Project Structure
 - pipeline/ — ETL script that loads raw data into Supabase
