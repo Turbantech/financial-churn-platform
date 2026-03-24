@@ -19,7 +19,9 @@ app.add_middleware(
 )
 
 # Load model
-model = pickle.load(open("../ml/model.pkl", "rb"))
+import os
+BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+model = pickle.load(open(os.path.join(BASE_DIR, "ml", "model.pkl"), "rb"))
 
 print("Model features:", model.get_booster().feature_names)
 # Supabase client
