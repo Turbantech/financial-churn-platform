@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveContainer, Cell } from "recharts";
 
-const API_URL = "http://127.0.0.1:8000";
+const API_URL = "https://financial-churn-platform.onrender.com";
 
 export default function App() {
   const [metrics, setMetrics] = useState([]);
