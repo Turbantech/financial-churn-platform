@@ -3,7 +3,7 @@
 An end to end machine learning platform that predicts which bank customers are likely to churn. Built with Python, XGBoost, FastAPI, React and Supabase.
 
 ## Live Demo
-- Dashboard: https://your-vercel-url.vercel.app
+- Dashboard: https://financial-churn-platform.vercel.app/
 
 ## Project Structure
 - pipeline/ — ETL script that loads raw data into Supabase
