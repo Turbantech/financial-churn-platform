@@ -1,0 +1,46 @@
+# Financial Churn Intelligence Platform
+
+An end to end machine learning platform that predicts which bank customers are likely to churn. Built with Python, XGBoost, FastAPI, React and Supabase.
+
+## Live Demo
+- Dashboard: (add vercel link after deployment)
+- API Docs: (add render link after deployment)
+
+## Project Structure
+- pipeline/ — ETL script that loads raw data into Supabase
+- ml/ — SHAP explainability output
+- api/ — FastAPI backend that serves predictions
+- dashboard/ — React frontend
+- notebook/ — Full EDA and model training notebook
+
+## What I Built
+I built a pipeline that ingests 10000 bank customer records into a Supabase data warehouse. I then ran SQL analysis to find churn patterns across different customer segments. After that I trained an XGBoost model using SMOTE to handle class imbalance and achieved 85.94% accuracy and a ROC AUC score of 0.93. The model is served through a FastAPI REST API and the results are displayed in a React dashboard where users can input customer details and get a live churn prediction.
+
+## Key Findings
+- Overall churn rate is 20.37%
+- Germany has the highest churn rate at 32.44%
+- Customers over 45 churn at 45.33%
+- Inactive members churn at almost double the rate of active members
+- Customers with 3 or 4 products have extremely high churn rates
+
+## Tech Stack
+- Data Pipeline: Python, Apache Airflow, Supabase, SQL
+- Machine Learning: XGBoost, SHAP, scikit-learn, imbalanced-learn
+- Backend: FastAPI, Python
+- Frontend: React, Recharts
+- Database: Supabase PostgreSQL
+- Deployment: Render, Vercel
+
+## How to Run Locally
+
+1. Clone the repo
+2. Create a .env file with your Supabase credentials
+3. Install dependencies: pip install -r requirements.txt
+4. Start the API: uvicorn api.main:app --reload
+5. Start the dashboard: cd dashboard && npm start
+
+## Model Performance
+- Accuracy: 85.94%
+- ROC AUC: 0.9347
+- Precision: 0.86
+- Recall: 0.86

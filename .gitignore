@@ -1,0 +1,43 @@
+# Secrets
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Python virtual environment
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Model file
+ml/model.pkl
+
+# Data files
+data/raw/
+data/processed/
+
+# Node modules
+node_modules/
+dashboard/node_modules/
+
+# React build
+build/
+dashboard/build/
+.pnp
+.pnp.js
+/.pnp
+
+# Testing
+coverage/
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# OS files
+.DS_Store
+Thumbs.db
